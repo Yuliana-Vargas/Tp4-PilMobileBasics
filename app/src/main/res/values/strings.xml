@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PilMobileBasics</string>
+    <string name="insert_number">Insert Number</string>
+    <string name="counter">Counter</string>
+    <string name="result">Result</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+</resources>
