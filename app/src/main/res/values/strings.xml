@@ -5,4 +5,6 @@
     <string name="result">Result</string>
     <string name="add">+</string>
     <string name="subtract">-</string>
+    <string name="reset">Reset</string>
+    <string name="error_required_input">Input required</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.pilmobilebasics.mvp.view
 
 import android.app.Activity
+import com.example.pilmobilebasics.R
 import com.example.pilmobilebasics.databinding.ActivityCountBinding
 import com.example.pilmobilebasics.mvp.contract.CountContract
 import com.example.pilmobilebasics.mvp.view.base.ActivityView
@@ -29,4 +30,12 @@ class CountView(activity: Activity) : ActivityView(activity), CountContract.View
     }
 
     override fun getInputNumber(): String = binding.inputNumber.text.toString()
+
+    override fun getEmptyInputNumberError() {
+        binding.inputNumber.error = context?.getString(R.string.error_required_input)
+    }
+
+    override fun clearInput() {
+        binding.inputNumber.text.clear()
+    }
 }

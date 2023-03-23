@@ -15,6 +15,8 @@ interface CountContract {
         fun onResetBtnPressed(onClick: () -> Unit)
         fun showResult(result: String)
         fun getInputNumber(): String
+        fun getEmptyInputNumberError()
+        fun clearInput()
     }
 
     interface Presenter {
