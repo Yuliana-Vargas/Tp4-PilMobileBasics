@@ -5,12 +5,14 @@ import com.example.pilmobilebasics.R
 import com.example.pilmobilebasics.databinding.ActivityCountBinding
 import com.example.pilmobilebasics.mvp.contract.CountContract
 import com.example.pilmobilebasics.mvp.view.base.ActivityView
+import com.example.pilmobilebasics.util.Constants
 
 class CountView(activity: Activity) : ActivityView(activity), CountContract.View {
     private var binding: ActivityCountBinding = ActivityCountBinding.inflate(activity.layoutInflater)
 
     init {
         activity.setContentView(binding.root)
+        binding.result.text = Constants.ZERO.toString()
     }
 
     override fun onAddBtnPressed(onClick: () -> Unit) {
