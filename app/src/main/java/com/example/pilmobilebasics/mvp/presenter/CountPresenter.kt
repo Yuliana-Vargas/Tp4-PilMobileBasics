@@ -1,10 +1,10 @@
 package com.example.pilmobilebasics.mvp.presenter
 
 import com.example.pilmobilebasics.mvp.contract.CountContract
-
 class CountPresenter(private val model: CountContract.Model, private val view: CountContract.View) : CountContract.Presenter {
 
     init {
+        view.showResult(model.getCount())
         view.onAddBtnPressed { onAddBtnPressed(view.getInputNumber()) }
         view.onSubtractBtnPressed { onSubtractBtnPressed(view.getInputNumber()) }
         view.onResetBtnPressed { onResetBtnPressed() }
